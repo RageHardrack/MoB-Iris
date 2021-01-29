@@ -1,5 +1,5 @@
 <template>
-	<nav class="flex px-4 py-2 text-white items-center">
+	<nav class="bg-secondary flex px-4 py-2 text-white items-center">
 		<div>
 			<router-link to="/">
 				<img class="w-14" src="@/assets/MoB-logo.png" alt="Mail On Bike Logo" />
@@ -42,13 +42,3 @@ export default {
 	},
 };
 </script>
-
-<style lang="scss">
-$azul1: #303868;
-$azul2: #52678e;
-$azul3: #6f8fc8;
-
-nav {
-	background-color: $azul2;
-}
-</style>

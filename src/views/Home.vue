@@ -1,5 +1,7 @@
 <template>
-	<div class="w-full flex flex-col justify-center items-center mt-10 mb-40">
+	<div
+		class="h-screen w-full flex flex-col justify-center items-center mt-10 mb-40"
+	>
 		<div
 			class="max-w-lg bg-gray-100 shadow-lg rounded-xl overflow-hidden mx-auto py-4 px-8 mt-10"
 		>
@@ -33,14 +35,3 @@ export default {
 	},
 };
 </script>
-
-<style lang="scss">
-body {
-	background: linear-gradient(
-		116.82deg,
-		#052b8d 0%,
-		rgba(39, 117, 169, 0.869792) 50%,
-		rgba(70, 185, 195, 0.75) 100%
-	);
-}
-</style>
