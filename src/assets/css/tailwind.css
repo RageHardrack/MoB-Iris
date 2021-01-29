@@ -1,3 +1,15 @@
+/* Font Montserrat */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+    font-family: 'Montserrat';
+}
+
+body {
+    background: linear-gradient(116.82deg, #052B8D 0%, rgba(39, 117, 169, 0.869792) 50%, rgba(70, 185, 195, 0.75) 100%);
+    background-repeat: no-repeat;
+}

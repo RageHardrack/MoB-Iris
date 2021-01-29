@@ -92,41 +92,43 @@
 						</div>
 					</div>
 
-					<div class="flex flex-row">
-						<div class="my-6 pt-3 rounded mr-10">
-							<label
-								for="password"
-								class="block text-gray-700 text-sm font-bold mb-2 ml-3"
-								>Password</label
-							>
-							<input
-								v-model="user.password"
-								v-validate="'required|min:6|max:40'"
-								type="password"
-								class="bg-white rounded w-full text-gray-700 focus:outline-none border-b-4 border-gray-300 focus:border-blue-600 transition duration-500 px-3 py-3"
-								name="password"
-							/>
-							<div
-								v-if="submitted && errors.has('password')"
-								class="alert-danger"
-							>
-								{{ errors.first("password") }}
-							</div>
+					<div class="my-6 pt-3 rounded">
+						<label
+							for="password"
+							class="block text-gray-700 text-sm font-bold mb-2 ml-3"
+							>Password</label
+						>
+						<input
+							v-model="user.password"
+							v-validate="'required|min:6|max:40'"
+							type="password"
+							class="bg-white rounded w-full text-gray-700 focus:outline-none border-b-4 border-gray-300 focus:border-blue-600 transition duration-500 px-3 py-3"
+							name="password"
+						/>
+						<div
+							v-if="submitted && errors.has('password')"
+							class="alert-danger"
+						>
+							{{ errors.first("password") }}
 						</div>
-						<div class="my-6 pt-3 rounded mr-10">
+					</div>
+
+					<div class="flex flex-row">
+						<div class="my-6 pt-3 rounded">
 							<label
 								for="roles"
 								class="block text-gray-700 text-sm font-bold mb-2 ml-3"
-								>Rol</label
+								>Seleccione un Rol</label
 							>
 							<select
 								name="roles"
 								v-model="user.roles"
 								multiple
-								class="bg-white rounded w-full text-gray-700 focus:outline-none border-b-4 border-gray-300 px-3 py-3 overscroll-contain"
+								class="bg-white rounded w-full text-gray-700 border-b-4 border-gray-300 px-3 py-3"
 							>
-								<option disabled value="">Seleccione un rol</option>
 								<option
+									class="w-full mx-auto
+									"
 									v-for="(rol, index) in roles"
 									:key="index"
 									:value="rol"
@@ -140,7 +142,7 @@
 					</div>
 
 					<button
-						class="flex-row w-full mt-4 bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 rounded shadow-lg hover:shadow-xl transition duration-200"
+						class="block w-full mt-4 bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 rounded shadow-lg hover:shadow-xl transition duration-200 mb-6"
 					>
 						Registrarse
 					</button>
